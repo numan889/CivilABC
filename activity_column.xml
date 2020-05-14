@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/backgroundcomon"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:id="@id/rlbanner"
+        android:background="@drawable/dialogbackgroundads"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlbanner">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <LinearLayout
+            android:id="@+id/LayoutL1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <GridLayout
+                android:id="@id/imaheview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92"
+                android:layout_centerInParent="true"
+                android:rowCount="5"
+                android:columnCount="4">
+
+                <TextView android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="  1 Inch =0.08 Feet" />
+
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="2 Inch = 0.16 Feet"
+                    android:layout_row="0" />
+
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="  3 Inch =0.25 Feet"
+                    android:layout_row="0" />
+
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="  4 Inch =0.33 Feet"
+                    android:layout_row="1" />
+
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="  5 Inch =0.42 Feet"
+                    android:layout_row="1" />
+
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="  6 Inch =0.50 Feet"
+                    android:layout_row="1" />
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="  7 Inch =0.58 Feet"
+                    android:layout_row="2"/>
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="  8 Inch =0.66 Feet"
+                    android:layout_row="2" />
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="  9 Inch =0.75 Feet"
+                    android:layout_row="2" />
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="  10 Inch =0.83 Feet"
+                    android:layout_row="3" />
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="  11 Inch =0.92 Feet"
+                    android:layout_row="3" />
+                <TextView
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/txtR12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="12 Inch = 1.0 Feet"
+                    android:layout_row="3" />
+            </GridLayout>
+
+            <TextView
+                android:textSize="20.0dip"
+                android:textStyle="bold"
+                android:textColor="#ff051357"
+                android:id="@id/txt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="Column And Beam Rod Calcolulation"
+                android:layout_below="@id/imaheview"
+                android:layout_centerInParent="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ColumnNoL"
+                android:layout_below="@+id/LayoutL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ColumaNumberTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Column Number/কলাম সংখ্যা:    "
+                    android:textColor="#ff51095e"
+                    android:textSize="16.0dip"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/NumberOfculam"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext1"
+                    android:hint="Enter Number Of Column  "
+                    android:inputType="numberDecimal"
+                    android:padding="5.0dip"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#ff0e5511"
+                    android:textColorHint="#ff7a7373"
+                    android:textSize="18.0dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/LinerR"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ColumnNoL">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="14.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="100.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:text="Rod Dia (mm) রড ব্যাস" />
+                        <TextView
+                            android:textSize="14.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="105.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:text="Rod Length(Rft) রড দৈর্ঘ্য" />
+                        <TextView
+                            android:textSize="14.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="100.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="Number Of Rod রড সংখ্যা" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="16.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Main Rod Size 1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/MineDia1"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Dia"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="0"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Lenth25"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Lenth"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="13.16"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Number25"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Nos"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="6"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:textSize="16.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Main Rod Size 2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/MineDia2"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Dia"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="22"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Lenth22"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Lenth"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="13.16"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Number22"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Nos"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="6"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/RodFurmulaunit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="162.2"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/Lenthmeter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.28"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Main Rod Size 3" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/MineDia3"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Dia"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="20"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Lenth20"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Lenth"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="13.16"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Number20"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Nos"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="6"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff090909"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Main + Tie Ring Size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/MineDia4"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Dia"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="10"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Lenth10"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Lenth"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="5.16"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Number10"
+                            android:layout_width="80.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@drawable/edittext1"
+                            android:hint="Nos"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:padding="5.0dip"
+                            android:text="23"
+                            android:textColor="#ff0e5511"
+                            android:textColorHint="#ff7a7373"
+                            android:textSize="18.0dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@id/LinerV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_below="@id/LinerR">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/DiamainNO1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 0.00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mm Bar =  " />
+
+                    <TextView
+                        android:id="@+id/Dia1AnsF"
+                        android:layout_width="60.0dip"
+                        android:layout_height="25.0dip"
+                        android:hint="Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:textColorHint="#88a58080" />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff1c4fae"
+                        android:id="@+id/Kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Kg" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/DiamainNO2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mm Bar = " />
+
+                    <TextView
+                        android:id="@+id/Dia2AnsF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:textColorHint="#88a58080" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff1c4fae"
+                        android:textColorHint="#88a58080"
+                        android:id="@+id/Kg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Kg" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/DiamainNO3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mm Bar = " />
+
+                    <TextView
+                        android:id="@+id/Dia3AnsF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:textColorHint="#88a58080" />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff1c4fae"
+                        android:textColorHint="#88a58080"
+                        android:id="@+id/kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Kg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/DiamainNO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#ff090909" />
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mm Bar = " />
+
+                    <TextView
+                        android:id="@+id/Dia4AnsF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff090909"
+                        android:textColorHint="#88a58080" />
+                    <TextView
+                        android:id="@+id/Kg10"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff1c4fae"
+                        android:textColorHint="#88a58080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Kg" />
+                </LinearLayout>
+
+                <LinearLayout android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edittext1"
+                    android:padding="8.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="25.0dip"
+                        android:textStyle="bold"
+                        android:textColor="#ff090909"
+                        android:id="@id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Total Rod =  " />
+
+                    <TextView
+                        android:id="@+id/TotalRod"
+                        android:layout_width="60.0dip"
+                        android:layout_height="25.0dip"
+                        android:hint="Result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff360788"
+                        android:textColorHint="#88a58080" />
+
+                    <TextView
+                        android:id="@+id/Rm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Kg"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ff1c4fae"
+                        android:textColorHint="#88a58080" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip">
+                    <Button
+                        android:textColor="#fffbfdfd"
+                        android:id="@id/button_area1"
+                        android:background="@drawable/roundbutton"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:text="  Enter  " />
+                    <Button
+                        android:textColor="#fffbfdfd"
+                        android:id="@id/button_vol1"
+                        android:background="@drawable/roundbutton"
+                        android:padding="2.0dip"
+                        android:visibility="gone"
+                        android:layout_width="105.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:text="Rm KG" />
+                    <Button
+                        android:textColor="#fffbfdfd"
+                        android:id="@id/button_next1"
+                        android:background="@drawable/roundbutton"
+                        android:padding="2.0dip"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:text="  Next  " />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

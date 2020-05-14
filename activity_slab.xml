@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/rlbanner"
+        android:background="@drawable/dialogbackgroundads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" />
+
+    <GridLayout android:id="@id/imaheview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.92"
+        android:layout_below="@id/rlbanner"
+        android:layout_centerInParent="true"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <TextView
+            android:textSize="10.0sp"
+            android:textStyle="bold"
+            android:id="@id/txtR1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="  1 Inch =0.08 Feet"
+            android:layout_row="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:textSize="10.0sp"
+            android:textStyle="bold"
+            android:id="@id/txtR2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="2 Inch = 0.16 Feet"
+            android:layout_row="0"
+            android:textAlignment="center" />
+
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="3" android:text="  3 Inch =0.25 Feet" android:layout_row="0" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:text="  4 Inch =0.33 Feet" android:layout_row="1" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:text="  5 Inch =0.42 Feet" android:layout_row="1" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="3" android:text="  6 Inch =0.50 Feet" android:layout_row="1" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:text="  7 Inch =0.58 Feet" android:layout_row="2" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:text="  8 Inch =0.66 Feet" android:layout_row="2" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="3" android:text="  9 Inch =0.75 Feet" android:layout_row="2" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:text="  10 Inch =0.83 Feet" android:layout_row="3" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:text="  11 Inch =0.92 Feet" android:layout_row="3" android:textAlignment="center" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/txtR12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="3" android:text="12 Inch = 1.0 Feet" android:layout_row="3" android:textAlignment="center" />
+    </GridLayout>
+    <TextView
+        android:textColor="#ffba0f23"
+        android:id="@id/txt_unit"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/unit_your_choice"
+        android:layout_below="@id/imaheview"
+        android:layout_centerInParent="true" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_unit">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@id/L2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+               android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:id="@id/LinerM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/etxtlenth"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/lenth"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/txtwidth"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/width"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@+id/txtNumber"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="Number"
+                    android:hint="Number"
+                    android:textAlignment="center" />
+
+                <TextView android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/txtthickness"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/thickness"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@id/LinerR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinerM">
+                <EditText
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/editText_mc"
+                    android:background="@drawable/edittext1"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:hint="Lenth"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+                <EditText
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/editText_nc"
+                    android:background="@drawable/edittext1"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:hint="width"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+                <EditText
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@+id/editText_Nos"
+                    android:background="@drawable/edittext1"
+                    android:padding="8.0dip"
+                    android:layout_width="60dp"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:text="1" android:hint="Number"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+                <EditText
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#ff090909"
+                    android:id="@id/editText_t"
+                    android:background="@drawable/edittext1"
+                    android:padding="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:hint="@string/thickness"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@id/et5"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/LinerV" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/LinerR" ads:layout_constraintEnd_toEndOf="parent" ads:layout_constraintStart_toStartOf="parent" ads:layout_constraintTop_toBottomOf="@id/LinerR">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  Area =  " />
+                    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView_area" android:layout_width="150.0dip" android:layout_height="wrap_content" android:hint="Result" android:layout_alignLeft="@id/textView6" android:layout_alignStart="@id/textView_volumeh" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Rod  =  " />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                       android:id="@+id/textView_rod"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:layout_alignLeft="@id/textView6"
+                        android:layout_alignStart="@id/textView_volumeh" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:id="@+id/slabrodsft"
+                        android:visibility="gone"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="1.22"
+                        android:layout_alignLeft="@id/textView6"
+                        android:layout_alignStart="@id/textView_volumeh" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:id="@id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume =" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:id="@id/textView_volumeh"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:layout_alignLeft="@id/textView6"
+                        android:layout_alignStart="@id/textView_volumeh" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/Layout5.5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textSize="20.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff061881"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ratio = 1 : 1.5 : 3 " />
+                        <TextView
+                            android:id="@+id/Ronehufthree"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5.5" />
+                        <TextView
+                            android:id="@+id/CommonTXT150"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.4" />
+                        <TextView
+                            android:id="@+id/CommonSand5"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.5" />
+                        <TextView
+                            android:id="@+id/CommonStone"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3" />
+                        <TextView
+                            android:id="@+id/ComCementTXT"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.25" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/L4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Cement  " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_cement5"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/L5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   Sand    " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_sand5"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/L6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/L5">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stone/Brick Chips: " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_metal5"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/Layout7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textSize="20.0dip"
+                            android:textStyle="bold"
+                            android:textColor="#ff061881"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ratio = 1 : 2 : 4 " />
+                        <TextView
+                            android:id="@+id/CommonTXTSand7"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2" />
+
+                        <TextView
+                           android:id="@+id/CommonStone7"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4" />
+
+                        <TextView
+                            android:id="@+id/Ronetowfour"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Cement  " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_cement7"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   Sand    " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_sand7"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stone/Brick Chips: " />
+                        <TextView
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:id="@+id/view_metal7"
+                            android:layout_width="150.0dip"
+                            android:layout_height="25.0dip"
+                            android:hint="Result" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/LastL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinerV">
+                <Button
+                    android:textColor="#fffbfdfd"
+                    android:id="@id/button_area1"
+                    android:background="@drawable/roundbutton"
+                    android:padding="2.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3.0dip"
+                    android:text="  Area  " />
+                <Button
+                    android:textColor="#fffbfdfd"
+                    android:id="@id/button_vol1"
+                    android:background="@drawable/roundbutton"
+                    android:padding="2.0dip"
+                    android:layout_width="105.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3.0dip"
+                    android:text="Volume" />
+                <Button
+                    android:textColor="#fffbfdfd" android:id="@id/button_next1" android:background="@drawable/roundbutton" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="  Next  " />
+            </LinearLayout>
+            <TextView
+                android:id="@id/textView18"
+                android:padding="5.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text=" **Concrete  All  Cement, Sand and Metal amounts are in units provided for the volume + All Valu Include(+/-)10%" android:layout_weight="0.1"
+                android:layout_below="@+id/LastL" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

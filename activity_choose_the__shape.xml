@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:layout_weight="3"
+    tools:context=".Choose_the_Shape">
+
+    <RelativeLayout
+        android:id="@+id/rlbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialogbackgroundads"
+        android:padding="3dp">
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlbanner"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:id="@+id/Relativ2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/backchoosetheshape"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtview"
+            android:textColor="#031168"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edittext1"
+            android:text="@string/choose_your_size" />
+
+        <LinearLayout
+            android:id="@+id/Linear1"
+            android:layout_below="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+
+            <Button
+                android:id="@+id/ConstructionBTN"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="@string/construction_process"
+                android:background="@drawable/edittext1"/>
+
+            <Button
+                android:id="@+id/Square"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14dp"
+                android:text="Square Shape"
+                android:textColor="#080909"
+                android:padding="5dp"
+                android:background="@drawable/edittext1" />
+
+            <Button
+                android:id="@+id/circle"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#080909"
+                android:textSize="14dp"
+                android:text="circle    Shape"
+                android:padding="5dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_below="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="2dp">
+
+            <Button
+                android:id="@+id/rectangle"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14dp"
+                android:textColor="#080909"
+                android:padding="5dp"
+                android:text="Rectangle Shape"
+                android:background="@drawable/edittext1" />
+
+
+
+        <Button
+                android:id="@+id/bulletshape"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+            android:textColor="#080909"
+                android:text="Bullet        Shape"
+                android:background="@drawable/edittext1"/>
+        <Button
+            android:id="@+id/parallelogram"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="11.5dp"
+            android:text="Parallelogram Shape"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:background="@drawable/edittext1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear3"
+        android:layout_below="@+id/Linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/oval"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:text="Oval         Shape"
+            android:background="@drawable/edittext1"/>
+
+        <Button
+            android:id="@+id/houseshape"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="14dp"
+            android:text="House Shape"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:background="@drawable/edittext1" />
+
+            <Button
+                android:id="@+id/Estimate"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="Estimate A Project"
+                android:background="@drawable/edittext1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear4"
+        android:layout_below="@+id/Linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="2dp">
+
+            <Button
+                android:id="@+id/TriangleB"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="Triangler Shape"
+                android:background="@drawable/edittext1"/>
+
+            <Button
+                android:id="@+id/Coming2"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14dp"
+                android:text="Coming Soon"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:background="@drawable/edittext1" />
+
+            <Button
+                android:id="@+id/Column"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="Column          And Beam Calcolution"
+                android:background="@drawable/edittext1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear5"
+        android:layout_below="@+id/Linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/Slab"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:text="Slab Calcolution"
+            android:background="@drawable/edittext1"/>
+
+        <Button
+            android:id="@+id/Coming5"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="14dp"
+            android:text="Coming Soon"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:textAlignment="center"
+            android:background="@drawable/edittext1"/>
+
+        <Button
+            android:id="@+id/Coming6"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:textColor="#080909"
+            android:text="Coming         Soon"
+            android:textAlignment="center"
+            android:background="@drawable/edittext1"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Linear6"
+            android:layout_below="@+id/Linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/Coming8"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="Coming         Soon"
+                android:textAlignment="center"
+                android:background="@drawable/edittext1"/>
+
+            <Button
+                android:id="@+id/Coming9"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14dp"
+                android:text="Coming Soon"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:textAlignment="center"
+                android:background="@drawable/edittext1"/>
+
+            <Button
+                android:id="@+id/Coming10"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="2dp"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#080909"
+                android:text="Coming         Soon"
+                android:textAlignment="center"
+                android:background="@drawable/edittext1"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
