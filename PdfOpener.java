@@ -81,6 +81,15 @@ public class PdfOpener extends AppCompatActivity {
         if (getItem.equals("4. Building Construction Step By Step Process")){
             myPDFViewer.fromAsset("building_construction_sbsprocess.pdf").load();
         }
+        if (getItem.equals("5. Civil Furmula")){
+            myPDFViewer.fromAsset("Civil Furmula.pdf").load();
+        }
+        if (getItem.equals("6 All Type Of Formula")){
+            myPDFViewer.fromAsset("All Type Of Formula.pdf").load();
+        }
+        if (getItem.equals("7 Basic Construction Formulas")){
+            myPDFViewer.fromAsset("Basic Construction Formulas.pdf").load();
+        }
     }
     public void BannerAds(){
         DatabaseReference roofRef = FirebaseDatabase.getInstance().getReference().child("Adunits");

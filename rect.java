@@ -127,11 +127,25 @@ public class rect extends AppCompatActivity {
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
+                m = Float.parseFloat(m_edt.getText().toString());
+                n = Float.parseFloat(n_edt.getText().toString());
+                t = Float.parseFloat(t_edt.getText().toString());
+                area = m * n;
+                volume = t*area ;
+                hasFuture = true ;
+                area_ans.setText(Float.toString(area ));
+                volume_ans.setText(Float.toString(volume));
                     Intent category = new Intent(getApplicationContext(),Category.class);
                     category.putExtra("area",area);
                     category.putExtra("volume",volume);
                     startActivity(category);
-                            }
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(),"a  or t value is not valid",Toast.LENGTH_SHORT).show();
+                    area_ans.setText("");
+                    volume_ans.setText("");
+                }
+            }
         });
     }
     public void BannerAds(){

@@ -47,7 +47,9 @@ public class PdfActivity extends AppCompatActivity {
 
         BannerAds();
 
-        String[] PdfFiles = {"1. The Holy Quranic E-book","2. autoCAD Shortcuts","3. Bangladesh National Building Code","4. Building Construction Step By Step Process"};
+        String[] PdfFiles = {"1. The Holy Quranic E-book","2. autoCAD Shortcuts","3. Bangladesh National Building Code",
+                "4. Building Construction Step By Step Process","5. Civil Furmula",
+                "6 All Type Of Formula","7 Basic Construction Formulas"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,PdfFiles){
             @NonNull
             @Override

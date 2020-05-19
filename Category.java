@@ -46,7 +46,8 @@ public class Category extends AppCompatActivity {
         BannerAds();
 
         ListView listView = (ListView) findViewById(R.id.listView);
-        ArrayAdapter<CharSequence> catList = ArrayAdapter.createFromResource(this , R.array.category_list ,android.R.layout.simple_list_item_1);
+        ArrayAdapter<CharSequence> catList = ArrayAdapter.createFromResource
+                (this , R.array.category_list ,android.R.layout.simple_list_item_1);
         listView.setAdapter(catList);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -61,18 +62,20 @@ public class Category extends AppCompatActivity {
                     }
                 }
                 if(position==1){
-                    //Intent BrickCal  = new Intent(getApplicationContext(),Concrete.class);
-                    //try {
-                       // BrickCal.putExtra("volume", past.getFloatExtra("volume",0));
-                        //startActivity(BrickCal);
-                    //}catch (Exception e){
+                    Intent BrickCal  = new Intent(getApplicationContext(),Concrete.class);
+                    try {
+                       BrickCal.putExtra("volume", past.getFloatExtra("volume",0));
+                        BrickCal.putExtra("area", past.getFloatExtra("area",0));
+                        startActivity(BrickCal);
+                    }catch (Exception e){
                         Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_SHORT).show();
-                    //}
+                    }
                 }
                 if(position==2){
                     Intent BrickCal  = new Intent(getApplicationContext(),BrickCal.class);
                     try {
                         BrickCal.putExtra("volume", past.getFloatExtra("volume",0));
+                        BrickCal.putExtra("area", past.getFloatExtra("area",0));
                         startActivity(BrickCal);
                     }catch (Exception e){
                         Toast.makeText(getApplicationContext(),"Volume is not valid.",Toast.LENGTH_SHORT).show();
@@ -83,6 +86,15 @@ public class Category extends AppCompatActivity {
                     try {
                         painting.putExtra("area", past.getFloatExtra("area",0));
                         startActivity(painting);
+                    }catch (Exception e){
+                        Toast.makeText(getApplicationContext(),"Area is not valid.",Toast.LENGTH_SHORT).show();
+                    }
+                }
+                else if (position==6){
+                    Intent Plastering  = new Intent(getApplicationContext(),Plastering.class);
+                    try {
+                        Plastering.putExtra("area", past.getFloatExtra("area",0));
+                        startActivity(Plastering);
                     }catch (Exception e){
                         Toast.makeText(getApplicationContext(),"Area is not valid.",Toast.LENGTH_SHORT).show();
                     }

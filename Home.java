@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
-    private Button mPdfView,btnconpro,btnReset,btnAllCalcu,mShareBtn;
+    private Button mPdfView,btnconpro,btnReset,btnAllCalcu,mShareBtn,NamajBTn;
     static final int REQUEST_CODE = 123;
 
     @Override
@@ -35,6 +35,14 @@ public class Home extends AppCompatActivity {
         btnReset= (Button) findViewById(R.id.onResetBtn);
         btnAllCalcu= (Button) findViewById(R.id.allcalBTN);
         mShareBtn= (Button) findViewById(R.id.ShareBtn);
+        NamajBTn= (Button) findViewById(R.id.Namaj);
+
+        NamajBTn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Namajshikkha.class));
+            }
+        });
 
         btnAllCalcu.setOnClickListener(new View.OnClickListener() {
             @Override
