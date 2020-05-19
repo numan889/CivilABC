@@ -15,6 +15,18 @@
         android:background="@drawable/dialogbackgroundads"
         android:padding="3dp">
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlbanner"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:padding="3dp">
 
 
     <LinearLayout
@@ -22,7 +34,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rlbanner"
+
         android:padding="10dp"
         android:gravity="center"
         android:weightSum="1">
@@ -43,6 +55,32 @@
             android:id="@+id/textView_vol" />
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area "
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/BrickArea" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/BrickAreaAns" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -51,12 +89,12 @@
         android:text="                    Cement  :   Sand :  Metal"
         android:id="@+id/textView16"
         android:visibility="gone"
-        android:layout_below="@+id/L1"
-        android:paddingTop="10dp"
-        />
+        android:layout_below="@+id/L11"
+        android:paddingTop="10dp"/>
 
     <LinearLayout
         android:id="@+id/L3"
+        android:visibility="gone"
         android:layout_below="@+id/textView16"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -96,56 +134,99 @@
             android:layout_width="60dp"
             android:layout_height="40dp"
             android:textAlignment="center"
-            android:text="1.50"
+            android:text="4"
             android:inputType="numberDecimal"
             android:background="@drawable/edittext1"
             android:ems="10"
             android:id="@+id/txt_sr" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Brickwork5inch"
+        android:layout_below="@+id/L11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/Fivein"
+        android:layout_below="@+id/L3"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/FiveInchBW"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Brick5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Fivein"
+        android:orientation="horizontal"
+        android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:padding="3dp"
-            android:textSize="20dp"
-            android:text="+" />
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="  Brick Needed  = "
+            android:id="@+id/Brickwork5" />
 
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:textAlignment="center"
-            android:text="3"
-            android:background="@drawable/edittext1"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/txt_mr" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/BwNeed5"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="Ans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Nos"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/L4"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/L3"
-        android:weightSum="1"
-        android:layout_gravity="bottom">
+        android:layout_below="@+id/Brick5"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="  Cement  "
-            android:id="@+id/textView20"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp" />
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="  Cement Needed = "
+            android:id="@+id/textView20" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/view_cement"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0.56" />
+            android:id="@+id/view_cement5"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="Ans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Bags"/>
     </LinearLayout>
 
     <LinearLayout
@@ -154,56 +235,298 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="   Sand    "
+            android:text="Sand Needed = "
             android:id="@+id/textView21"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp" />
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/view_sand"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0.56" />
+            android:id="@+id/view_sand5"
+            android:text="Ans"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Cft."/>
     </LinearLayout>
-
     <LinearLayout
-        android:id="@+id/L6"
+        android:id="@+id/Rajmestery5"
         android:layout_below="@+id/L5"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="   Metal    "
-            android:id="@+id/textView22"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp" />
+            android:text="Raj Mistry Needed = "
+            android:id="@+id/txtRajmi5"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/view_metal"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0.56" />
+            android:id="@+id/txtRajmistery5"
+            android:text="Ans"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Nos"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/RajmesteryHelper5"
+            android:layout_below="@+id/L5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raj Helper Needed = "
+                android:id="@+id/txtRajmiHelper5"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/txtRajmisteryhelper5"
+                android:text="Ans"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"
+                android:text="   Nos"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/id_native_ad"
+        android:layout_below="@+id/Brickwork5inch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Brickwork10inch"
+        android:layout_below="@+id/id_native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/Tenin"
+        android:layout_below="@+id/Rajmestery5"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/FTenInchBW"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Brick10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tenin"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="  Brick Needed  = "
+            android:id="@+id/Brickwork10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/BwNeed10"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="Ans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Nos"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Brick10"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="  Cement Needed = "
+            android:id="@+id/textView22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/view_cement10"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="Ans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Bags"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L8"
+        android:layout_below="@+id/L6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sand Needed ="
+            android:id="@+id/textView23"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/view_sand10"
+            android:text="Ans"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#101010"
+            android:text="   Cft."/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Rajmestery10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raj Mistry Needed = "
+                android:id="@+id/txtRajmi10"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/txtRajmistery10"
+                android:text="Ans"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"
+                android:text="   Nos"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/RajmesteryHelper10"
+            android:layout_below="@+id/L5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raj Mistry Needed = "
+                android:id="@+id/txtRajmiHelper10"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/txtRajmisteryhelper10"
+                android:text="Ans"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#101010"
+                android:text="   Nos"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/L7"
-        android:layout_below="@+id/L6"
+        android:layout_below="@+id/Brickwork10inch"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -231,9 +554,12 @@
         android:layout_height="wrap_content"
         android:padding="25dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=" **Brick  All  Cement, Sand and Metal amounts are in units provided for the volume."
+        android:text=" **Brick  All  Cement, Sand and Metal amounts are in units provided for the volume And Area..."
         android:id="@+id/textView18"
         android:layout_weight="0.10" />
+</RelativeLayout>
+    </ScrollView>
+
 
 
 </RelativeLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Namajshikkha">
+    <RelativeLayout
+        android:id="@+id/rlbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dialogbackgroundads"
+        android:padding="3dp">
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/Framlawout"
+        android:layout_below="@+id/rlbanner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoview"/>
+    </FrameLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/Framlawout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Sana"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="Sana,Tasahhud,Durud,Dua Masura,Dua Kunut                                  (সানা, তাসাহহুদ, দুরুদ, দুয়া মাসুরা, দুয়া কুনুত
+)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/Sura1"
+        android:layout_below="@+id/Framlawout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext1"
+        android:textColor="#127E17"
+        android:text="1. Al-Fatihah (The Opening)                                           আল-ফাতিহা (উদ্বোধনী)"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+   <Button
+       android:id="@+id/Sura2"
+       android:layout_below="@+id/Framlawout"
+       android:layout_width="350dp"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="5dp"
+       android:background="@drawable/edittext1"
+       android:textColor="#127E17"
+       android:text="2. Al-Ikhlas (The Unity)                                           আল-ইখলাস (The Unity)"
+       android:textStyle="bold"
+       android:textSize="14dp" />
+
+   <Button
+        android:id="@+id/Sura3"
+        android:layout_below="@+id/Framlawout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+         android:background="@drawable/edittext1"
+         android:textColor="#127E17"
+         android:text="3. Al-Lahab (The Flame)                                             আল-লাহাব (শিখা))"
+         android:textStyle="bold"
+         android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/L2"
+                android:layout_below="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/Sura4"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="4. Al-Quraish (The Quraish)                                     আল-কুরাইশ (কুরাইশ))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura5"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="5. Al-Kafirun (The Disbelievers)                                         আল-কাফিরুন (কাফেররা)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura6"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="6.  Al-Fil (The Elephant)                                            আল-ফিল (হাতি))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/Sura7"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="7. Al-Falaq (The Dawn)                                               আল-ফালাক (দ্য ভোর))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura8"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="8. Al-'Asr (The Time)                                                       আল-আসর (সময়))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura9"
+                android:visibility="gone"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="9. Al-Qari-ah (The Calamity)                               আল-কারিয়াহ (দুর্যোগ))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura10"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="10.  Al-Kauthar (The Abundance of Good)             আল-কৌথার (উত্তমতার প্রাচুর্য))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura11"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="11. Al-Adiyat (The Assaulters)                            আল-আদিয়াত (দ্য হামলাকারী))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura12"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="12.  Al-Humazah (The Slanderer)                           আল-হুমাযাহ (অপবাদদাতা))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/L3"
+                android:layout_below="@+id/L2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/Sura13"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="13.  Al-Ma'un (Acts of Kindness)                          আল-মা'আন (করুণার কাজ)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/Sura14"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="14. An-Nasr (The Help)                                                    আন-নসর (সহায়তা)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura15"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="15. An-Nas (The Men)                                                 আন-নাস (পুরুষ))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura16"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="16.  At-Takathur (The Abundance of Wealth)  আত-তাকাথুর (সম্পদের প্রাচুর্য))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura17"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="17. Al-Zilzal (The Shaking)                                      আল-জিলজাল (কাঁপানো)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/Sura18"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="18. Al-Qadr (The Majesty)                                            আল-কদর (মহিমান্বিত)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura19"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="19. At-Tin (The Fig)                                                            এট-টিন (চিত্র) আল-আল-আলাক (দ্য ক্লট))"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura20"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="20. Ar-Rahman (The Beneficent)                                            আর-রহমান (দয়ালু)"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/Sura21"
+                android:layout_below="@+id/Framlawout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext1"
+                android:textColor="#127E17"
+                android:text="21. Ya Sin (Ya Sin)                                                                     ইয়া সিন (ইয়া সিন) "
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
